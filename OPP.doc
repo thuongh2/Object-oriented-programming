@@ -1,0 +1,68 @@
+﻿OOP
+	Class and Objects: thuoc tinh, phuong thuc
+	Constructor Khoi tao, Access Modifilers Pham vi truy cap (4 key)  and Overloading methods Co che nap chong
+	Encapsulation Dong goi
+	Inheritance Tinh ke thua
+	Polymorphism Da hinh
+	Abtraction Tu tuong
+
+LUU Y 
+Ten thuoc tinh danh tu
+Phuong thuc dong tu
+
+[access modifiers] ClassName[:Base class or Interface]
+{
+Cu phap khai bao thuoc tinh:
+Pham vi truy cap + kieu du lieu + ten thuoc tinh;
+
+METHODS
+[accessModifier] <datatype|void> methodName([list of parameters])
+{ 
+  // Xử lý của phương thức 
+  [return value;]
+}
+
+-Tao doi tuong
+ClassName ObjectName = new ClassName();
+- Truy cap thanh vien
+objectName.<attrubyteName or MethodName>;
+------------------------------------------------------------------------
+
+1 Phuong thuc nap chong Overloading Methods
+	la nhung phuong thuc 
+		Trung ten
+		Khac tham so, so luong, trat tu
+Dua vao so luong doi so khi goi de xac dinh phuong thuc nao duoc goi
+
+2 Phuong thuc khoi tao Contructor
+	Muc dich: khoi tao gia tri cho cac thuoc tinh, khong co kieu tra ve
+	La nhung phuong thuc co ten truong voi ten lop, khong co kieu tra ve
+Trong truong hop ten thuoc tinh va ten tham so giong nhau thi dung tu khoa this de phan biet
+Khi khong khai bao C# cung cap default contructor (0 tham so)
+
+3 Pham vi truy cap Access modifier
+	Chi dinh pham vi duoc phep truy cap thuoc tinh phuong thuc tai lop khai bao hoac lop khac
+	Co 4 pham vi private, protected, internal, public
+
+public khong han che
+protected truy cap ben trong lop va lop con ke thua private a + lop duoc ke thua
+private chi truy cap ben trong lop khai bao
+internal duoc truy cap tai nhung lop cung project
+
+default: class - internal atttibute-private
+
+=========================================================
+	TÍNH ĐÓNG GIÓI (bảo vệ dữ liệu)
+Mọi dữ liệu được che dấu từ bên ngoài, dùng phuong thức để truy xuất các trường dữ liệu
+
+Mục đích
+Bảo vệ dữ liệu
+Tăng cường khả năng mở rộng
+
+
+
+
+
+
+
+

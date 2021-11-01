@@ -1,0 +1,92 @@
+OOP
+	Class and Objects: thuoc tinh, phuong thuc
+	Constructor Khoi tao, Access Modifilers Pham vi truy cap (4 key)  and Overloading methods Co che nap chong
+	Encapsulation Dong goi
+	Inheritance Tinh ke thua
+	Polymorphism Da hinh
+	Abtraction Tu tuong
+
+LUU Y 
+Ten thuoc tinh danh tu
+Phuong thuc dong tu
+
+[access modifiers] ClassName[:Base class or Interface]
+{
+Cu phap khai bao thuoc tinh:
+Pham vi truy cap + kieu du lieu + ten thuoc tinh;
+
+METHODS
+[accessModifier] <datatype|void> methodName([list of parameters])
+{ 
+  // Xử lý của phương thức 
+  [return value;]
+}
+
+-Tao doi tuong
+ClassName ObjectName = new ClassName();
+- Truy cap thanh vien
+objectName.<attrubyteName or MethodName>;
+------------------------------------------------------------------------
+
+1 Phuong thuc nap chong Overloading Methods
+	la nhung phuong thuc 
+		Trung ten
+		Khac tham so, so luong, trat tu
+Dua vao so luong doi so khi goi de xac dinh phuong thuc nao duoc goi
+
+2 Phuong thuc khoi tao Contructor
+	Muc dich: khoi tao gia tri cho cac thuoc tinh, khong co kieu tra ve
+	La nhung phuong thuc co ten truong voi ten lop, khong co kieu tra ve
+Trong truong hop ten thuoc tinh va ten tham so giong nhau thi dung tu khoa this de phan biet
+Duoc goi khi goi doi tuong
+Khi khong khai bao C# cung cap default contructor (0 tham so)
+
+3 Pham vi truy cap Access modifier
+	Chi dinh pham vi duoc phep truy cap thuoc tinh phuong thuc tai lop khai bao hoac lop khac
+	Co 4 pham vi private, protected, internal, public
+
+public khong han che
+protected truy cap ben trong lop va lop con ke thua private a + lop duoc ke thua
+private chi truy cap ben trong lop khai bao
+internal duoc truy cap tai nhung lop cung project
+
+default: class - internal atttibute-private
+
+=========================================================
+	TÍNH ĐÓNG GIÓI (bảo vệ dữ liệu)
+Mọi dữ liệu được che dấu từ bên ngoài, dùng phuong thức để truy xuất các trường dữ liệu
+
+Mục đích
+Bảo vệ dữ liệu
+Tăng cường khả năng mở rộng ( hôm nay private, ngày mai muốn làm thêm setter getter)
+
+==========================================================
+
+	TÍNH KẾ THỪA (Inheritance)
+Sự phân cấp 
+phân cấp kế thừa dùng dấu : để phân biết lớp con và cha
+
+Kế thừa là 1 cơ chế tạo 1 lớp mới dựa trên kết quả lớp đã có, kế thừ thuộc tính và phương thứ mà có quyền truy cập từ lớp có sẵn (lớp cha)
+Mục đích tái sử dụng
+
+Lớp con được phép sở hứu các tài sản của lớp cha (public, internal, protected)
+không thể private
+không thể kế thừa phương thức khởi tạo
+2.Phương thức khởi tạo lớp có sẵng
+	lớp con được phép chỉ định một phương thức cụ thể từ lớp cha bằng cách base (tham số)
+trong trường hợp không chỉ định thì phương thức khởi tạo matcwj định (không tham số)
+
+3.Những phương thức lớp cha có từ khóa virtual thì lớp con override (thay đổi xử lí)
+
+override lớp con viết lại xử lí cho phương thức của lớp cha
+giống
+
+4. Sealed Tạo ra lớp không cho phép kế thừa
+lớp niêm phong
+
+
+
+
+
+
+
