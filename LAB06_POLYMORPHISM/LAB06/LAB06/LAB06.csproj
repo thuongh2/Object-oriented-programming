@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>LAB06.BAI1.StaffManagement</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="BAI2\" />
+  </ItemGroup>
+
+</Project>
